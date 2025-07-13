@@ -1,67 +1,55 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OrbiVeda - Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #3b82f6, #6366f1);
-      color: #fff;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .logo {
-      width: 120px;
-      margin-bottom: 20px;
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    p {
-      font-size: 1.2rem;
-      margin: 10px 0 20px;
-    }
-    .btn {
-      background: #fff;
-      color: #3b82f6;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-    .btn:hover {
-      background: #f3f4f6;
-      transform: scale(1.05);
-    }
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9rem;
-      color: #e5e7eb;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Orbiveda | Innovation Meets Soul">
+  <title>Orbiveda | Innovation Meets Soul</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <img src="https://i.imgur.com/Z4xTa6m.png" alt="OrbiVeda Logo" class="logo">
-  <h1>OrbiVeda</h1>
-  <p>Connecting Spirituality, Culture & Social Innovation</p>
-  <a href="mailto:orbiveda@gmail.com" class="btn">Contact Us</a>
-  <footer>
-    &copy; 2025 OrbiVeda. All rights reserved.
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Orbiveda</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Innovation Meets Soul</h1>
+    <p>Shaping the future with purpose. Discover how Orbiveda blends cutting-edge technology with timeless wisdom.</p>
+    <div class="buttons">
+      <a href="#about" class="btn-primary">Discover More</a>
+      <a href="#products" class="btn-secondary">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Orbiveda</h2>
+    <p>We are a futuristic company that merges innovation with spiritual wisdom to create purposeful solutions for the modern world.</p>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <p>Explore our range of offerings designed to uplift and empower.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:orbiveda@gmail.com">orbiveda@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/orbiveda">@orbiveda</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Orbiveda. All rights reserved.
   </footer>
 </body>
 </html>
