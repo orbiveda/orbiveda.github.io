@@ -18,10 +18,8 @@ a {
   background-color: #111;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #FFD700;
+.navbar .logo img {
+  height: 40px;
 }
 
 .navbar nav a {
@@ -68,4 +66,4 @@ footer {
   padding: 1.5rem;
   border-top: 1px solid #333;
   color: #777;
-  }
+}
