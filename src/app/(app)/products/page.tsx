@@ -24,9 +24,9 @@ const products = [
   },
   {
     icon: Bot,
-    title: "BhaktiConnect",
+    title: "BhaktiPath",
     tagline: "Your Spiritual AI Companion.",
-    description: "BhaktiConnect is a unique spiritual assistant crafted especially for ISKCON devotees and seekers. It offers tools and guidance to help practitioners stay connected to their faith and live a balanced, devotional life.",
+    description: "BhaktiPath is a unique spiritual assistant crafted especially for ISKCON devotees and seekers. It offers tools and guidance to help practitioners stay connected to their faith and live a balanced, devotional life.",
      features: [
       "AI-generated Timetables for Japa, Sadhana, and daily routines.",
       "Access to sacred texts, kirtans, and lectures.",

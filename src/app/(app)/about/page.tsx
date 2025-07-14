@@ -61,6 +61,7 @@ export default function AboutPage() {
               width={600}
               height={600}
               className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
+              data-ai-hint="abstract spiritual"
             />
           </div>
           <div className="order-2 md:order-1 space-y-6">
