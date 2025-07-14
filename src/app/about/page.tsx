@@ -51,12 +51,12 @@ export default function AboutPage() {
         <motion.div className="grid md:grid-cols-2 gap-12 items-center mb-24" variants={itemVariants}>
           <div className="flex justify-center order-1 md:order-2">
             <Image 
-              src="/logo.png"
-              alt="Orbiveda Logo"
+              src="/orissa-dash-men.png"
+              alt="Orbiveda Vision"
               width={600}
               height={600}
               className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
-              data-ai-hint="logo"
+              data-ai-hint="vision future"
             />
           </div>
           <div className="order-2 md:order-1 space-y-6">
