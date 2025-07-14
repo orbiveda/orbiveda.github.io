@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
-import { Logo } from '@/components/ui/logo';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/about', label: 'About Us' },
@@ -45,8 +45,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-            <Logo className="w-8 h-8"/>
-            Orbiveda
+            <Image src="https://placehold.co/180x60.png" alt="Orbiveda Logo" width={140} height={40} data-ai-hint="logo" />
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (

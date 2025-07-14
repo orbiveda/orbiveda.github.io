@@ -1,3 +1,7 @@
+// This file is no longer used and can be removed.
+// We are now using an Image component for the logo.
+// Keeping it for now to avoid breaking imports, but it should be deleted.
+
 import * as React from "react"
 import { cn } from "@/lib/utils"
 

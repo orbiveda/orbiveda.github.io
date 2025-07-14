@@ -8,29 +8,6 @@ const story = {
   content: "Founded on the principle that the next leap in technology must be a leap in consciousness, Orbiveda was born from a desire to reconcile the digital with the divine. Our journey began with a simple question: What if our devices could not only connect us to information, but also to ourselves and each other on a more meaningful level? This question drives our every innovation, as we explore the synthesis of advanced AI, beautiful design, and ancient wisdom to build a more enlightened world, one product at a time."
 };
 
-const timelineEvents = [
-  {
-    year: "2023",
-    title: "The Spark of an Idea",
-    description: "A small group of technologists and philosophers questioned the trajectory of modern tech and envisioned a more human-centric future."
-  },
-  {
-    year: "2024",
-    title: "Orbiveda is Born",
-    description: "The company was founded with a clear mission: to blend cutting-edge innovation with timeless wisdom, creating technology that serves humanity."
-  },
-  {
-    year: "2025",
-    title: "Building the Foundation",
-    description: "Development begins on our foundational products: TrueBond, BhaktiConnect, and other visionary tools."
-  },
-  {
-    year: "Future",
-    title: "A New Paradigm",
-    description: "We aim to launch our first suite of products, inviting the world to experience a more soulful, connected, and purposeful digital existence."
-  }
-];
-
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -103,32 +80,6 @@ export default function AboutPage() {
             <p className="text-lg text-muted-foreground">
               {story.content}
             </p>
-        </motion.div>
-        
-        <motion.div className="max-w-5xl mx-auto" variants={itemVariants}>
-          <h3 className="text-3xl font-bold text-center mb-12 text-accent">Our Journey</h3>
-          <div className="relative">
-            <div className="absolute left-1/2 h-full w-0.5 bg-border -translate-x-1/2"></div>
-            {timelineEvents.map((event, index) => (
-              <motion.div 
-                key={index} 
-                className="mb-8 flex justify-between items-center w-full"
-                initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.8 }}
-                transition={{ duration: 0.6 }}
-              >
-                <div className={`w-5/12 ${index % 2 === 0 ? 'order-1' : 'order-3'}`}></div>
-                <div className="z-10 flex items-center order-2 bg-primary text-primary-foreground shadow-xl w-12 h-12 rounded-full justify-center text-lg font-bold">
-                  {event.year}
-                </div>
-                <div className={`w-5/12 p-6 bg-card border rounded-lg shadow-lg hover:shadow-primary/20 transition-shadow duration-300 ${index % 2 === 0 ? 'order-3 text-left' : 'order-1 text-right'}`}>
-                  <h4 className="font-bold text-xl mb-1 text-primary">{event.title}</h4>
-                  <p className="text-muted-foreground">{event.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
       </motion.div>

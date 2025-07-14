@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Bot, CalendarCheck } from "lucide-react";
+import { Users, Bot } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -16,11 +16,6 @@ const highlightedProducts = [
     title: "BhaktiConnect",
     description: "A unique spiritual AI assistant crafted for ISKCON devotees and seekers.",
   },
-  {
-    icon: CalendarCheck,
-    title: "Visionary Tools",
-    description: "Explore our suite of tools designed for a more mindful and organized life.",
-  },
 ];
 
 export default function ProductHighlights() {
@@ -36,7 +31,7 @@ export default function ProductHighlights() {
               We are developing a suite of products designed to elevate the human experience. Here's a glimpse into what's coming.
             </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
           {highlightedProducts.map((product) => {
             const Icon = product.icon;
             return (

@@ -1,5 +1,5 @@
 import { Instagram, Twitter, Linkedin } from 'lucide-react';
-import { Logo } from '@/components/ui/logo';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -11,8 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start col-span-1 md:col-span-2">
                  <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-4">
-                    <Logo className="w-8 h-8"/>
-                    Orbiveda
+                    <Image src="https://placehold.co/180x60.png" alt="Orbiveda Logo" width={140} height={40} data-ai-hint="logo dark" />
                 </Link>
                 <p className="text-muted-foreground max-w-xs">Shaping the future with purpose by blending cutting-edge technology with timeless wisdom.</p>
             </div>
