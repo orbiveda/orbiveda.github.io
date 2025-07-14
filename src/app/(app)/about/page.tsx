@@ -56,10 +56,10 @@ export default function AboutPage() {
         <motion.div className="grid md:grid-cols-2 gap-12 items-center mb-24" variants={itemVariants}>
           <div className="flex justify-center order-1 md:order-2">
             <Image 
-              src="https://placehold.co/600x600.png"
+              src="https://placehold.co/500x500.png"
               alt="Orbiveda Vision"
-              width={600}
-              height={600}
+              width={500}
+              height={500}
               className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full"
               data-ai-hint="abstract spiritual"
             />

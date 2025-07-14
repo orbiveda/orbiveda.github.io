@@ -34,7 +34,7 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "/img/bhaktipath-app.png",
+    image: "https://placehold.co/500x500.png",
     aiHint: "spiritual ai"
   },
 ];
@@ -58,8 +58,8 @@ export default function ProductsPage() {
                   <Image
                     src={product.image}
                     alt={product.title}
-                    width={600}
-                    height={400}
+                    width={product.title === "BhaktiPath" ? 500 : 600}
+                    height={product.title === "BhaktiPath" ? 500 : 400}
                     className="w-full"
                     data-ai-hint={product.aiHint}
                   />
