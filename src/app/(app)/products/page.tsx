@@ -21,7 +21,7 @@ const products = [
       "Community spaces for deeper engagement.",
       "Mindful design to reduce digital fatigue."
     ],
-    image: "/img/orbiveda-main.png",
+    image: "https://placehold.co/600x400.png",
     aiHint: "social connection"
   },
   {
@@ -34,7 +34,7 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "/img/bhaktipath-app.png",
+    image: "https://placehold.co/600x400.png",
     aiHint: "spiritual ai"
   },
 ];
