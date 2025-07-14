@@ -26,12 +26,12 @@ export default function AboutSummary() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/600x600.png"
-              alt="Orbiveda Team Vision"
+              src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/public%2Fimages%2F61eb43b5-4b53-488f-9a00-111ec7edc82c.png?alt=media"
+              alt="Orbiveda Logo"
               width={500}
               height={500}
               className="rounded-xl shadow-2xl shadow-primary/10 transform hover:scale-105 transition-transform duration-500"
-              data-ai-hint="team vision"
+              data-ai-hint="logo"
             />
           </div>
         </div>
