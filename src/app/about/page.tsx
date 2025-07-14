@@ -51,12 +51,12 @@ export default function AboutPage() {
         <motion.div className="grid md:grid-cols-2 gap-12 items-center mb-24" variants={itemVariants}>
           <div className="flex justify-center order-1 md:order-2">
             <Image 
-              src="https://placehold.co/600x600.png"
-              alt="Abstract representation of technology and soul"
+              src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/public%2Fimages%2F61eb43b5-4b53-488f-9a00-111ec7edc82c.png?alt=media"
+              alt="Orbiveda Logo"
               width={600}
               height={600}
               className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
-              data-ai-hint="abstract technology"
+              data-ai-hint="logo"
             />
           </div>
           <div className="order-2 md:order-1 space-y-6">
