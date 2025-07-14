@@ -25,14 +25,16 @@ const testimonials = [
   }
 ];
 
-export default function TestimonialsSection() {
+export default function FeedbackPage() {
   return (
-    <section id="testimonials" className="py-20 lg:py-32 bg-card">
+    <section id="feedback" className="py-20 lg:py-32 bg-card">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
-        <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-16">
-          We are proud to partner with forward-thinking organizations and individuals.
-        </p>
+        <div className="pt-20">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Feedback From Our Partners</h2>
+            <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-16">
+            We are proud to partner with forward-thinking organizations and individuals.
+            </p>
+        </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {testimonials.map((item) => (
             <Card key={item.name} className="bg-background border border-border/50 text-left flex flex-col">

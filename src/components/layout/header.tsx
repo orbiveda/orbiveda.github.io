@@ -5,17 +5,19 @@ import Link from 'next/link';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#products', label: 'Products' },
-  { href: '#testimonials', label: 'Testimonials' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/about', label: 'About' },
+  { href: '/products', label: 'Products' },
+  { href: '/feedback', label: 'Feedback' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,10 +27,12 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isHomePage = pathname === '/';
+
   return (
     <header className={cn(
       "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-      isScrolled || isMenuOpen ? "bg-background/80 backdrop-blur-sm border-b border-border" : "bg-transparent"
+      isScrolled || isMenuOpen || !isHomePage ? "bg-background/80 backdrop-blur-sm border-b border-border" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -38,9 +42,11 @@ export default function Header() {
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-foreground/80 hover:text-primary transition-colors font-medium">
+              <Link key={link.href} href={link.href} className={cn("text-foreground/80 hover:text-primary transition-colors font-medium", {
+                "text-primary": pathname === link.href
+              })}>
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <div className="md:hidden">
@@ -55,9 +61,11 @@ export default function Header() {
         <div className="md:hidden">
           <nav className="flex flex-col items-center space-y-6 pt-4 pb-8">
             {navLinks.map((link) => (
-              <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-lg text-foreground/80 hover:text-primary transition-colors">
+              <Link key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className={cn("text-lg text-foreground/80 hover:text-primary transition-colors", {
+                "text-primary": pathname === link.href
+              })}>
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

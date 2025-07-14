@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function AboutSection() {
+export default function AboutPage() {
   return (
     <section id="about" className="py-20 lg:py-32 bg-card">
       <div className="container mx-auto px-4">

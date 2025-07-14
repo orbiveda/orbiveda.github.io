@@ -17,7 +17,7 @@ const contactFormSchema = z.object({
   message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
-export default function ContactSection() {
+export default function ContactPage() {
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof contactFormSchema>>({
@@ -41,7 +41,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center">
+        <div className="text-center pt-20">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
             <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
             Have a question or want to work together? Send us a message.

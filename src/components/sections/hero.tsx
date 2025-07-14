@@ -19,12 +19,12 @@ export default function HeroSection() {
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
-            <a href="#products">Our Products</a>
+            <Link href="/products">Our Products</Link>
           </Button>
           <Button asChild size="lg" variant="ghost" className="hover:bg-accent/20 hover:text-accent">
-            <a href="#about">
+            <Link href="/about">
               Discover More <MoveRight className="ml-2 h-5 w-5" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
