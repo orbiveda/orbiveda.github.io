@@ -28,7 +28,7 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "https://placehold.co/600x400.png",
+    image: "/img/bhaktipath-app.png",
     aiHint: "spiritual ai"
   },
 ];
@@ -36,8 +36,8 @@ const products = [
 export default function ProductsPage() {
   return (
     <section id="products" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 pt-16">
+        <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Vision for the Future</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-16">
               We craft premium technology that blends cutting-edge features with a deep respect for the human spirit. Our product pipeline is focused on creating a more intuitive and enlightened world.
@@ -54,7 +54,7 @@ export default function ProductsPage() {
                     alt={product.title}
                     width={600}
                     height={400}
-                    className="w-full h-56 object-cover"
+                    className="w-full h-auto object-cover"
                     data-ai-hint={product.aiHint}
                   />
                 </CardHeader>

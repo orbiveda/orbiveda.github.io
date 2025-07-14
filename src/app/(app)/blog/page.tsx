@@ -12,23 +12,23 @@ const blogPosts = [
     description: "TrueBond is Orbiveda’s revolutionary platform designed to foster genuine human connections in an AI-first world. It combines advanced algorithms with a mindful design to help users build real, purposeful relationships—whether with friends, families, or like-minded communities.",
     image: "https://placehold.co/600x400.png",
     aiHint: "futuristic connection",
-    slug: "/blog/visual-connection",
+    slug: "/blog/truebond-redefining-interaction",
   },
   {
     title: "BhaktiConnect App: Technology Meets Spirituality",
     date: "October 15, 2024",
     description: "In today’s fast-paced digital world, BhaktiConnect is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide. This isn’t just an app—it’s a companion for your spiritual journey.",
-    image: "https://placehold.co/600x400.png",
+    image: "/img/bhaktipath-app.png",
     aiHint: "digital spirituality",
-    slug: "/blog/digital-devotion",
+    slug: "/blog/bhakticonnect-digital-devotion",
   },
 ];
 
 export default function BlogPage() {
   return (
     <section id="blog" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 pt-16">
+        <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">From the Orb</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-16">
               Insights, ideas, and updates from the team at Orbiveda.
