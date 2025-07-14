@@ -9,7 +9,7 @@ const blogPosts = [
   {
     title: "TrueBond: Redefining Human Interaction",
     date: "October 26, 2024",
-    description: "TrueBond is Orbiveda’s revolutionary platform designed to foster genuine human connections in an AI-first world. It combines advanced algorithms with a mindful design to help users build real, purposeful relationships—whether with friends, families, or like-minded communities.",
+    description: "In a world oversaturated with notifications and digital noise, TrueBond is a bold step towards genuine and effortless communication. Unlike traditional video calls or static messaging, TrueBond leverages real-time gesture recognition, AI-assisted visual cues, and immersive UI to make conversations more human-centric.",
     image: "https://placehold.co/600x400.png",
     aiHint: "futuristic connection",
     slug: "/blog/truebond-redefining-interaction",
