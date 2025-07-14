@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Bot, CalendarCheck } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Users, Bot, CheckCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
@@ -7,23 +7,28 @@ const products = [
   {
     icon: Users,
     title: "TrueBond",
-    description: "An AI-powered social connection platform designed to foster deep, meaningful relationships by moving beyond superficial interactions.",
+    tagline: "Connect Meaningfully. Beyond Social.",
+    description: "TrueBond is Orbiveda’s revolutionary platform designed to foster genuine human connections in an AI-first world. It combines advanced algorithms with a mindful design to help users build real, purposeful relationships—whether with friends, families, or like-minded communities.",
+    features: [
+      "AI-powered matching based on personality and values.",
+      "Community spaces for deeper engagement.",
+      "Mindful design to reduce digital fatigue."
+    ],
     image: "https://placehold.co/600x400.png",
     aiHint: "social connection"
   },
   {
     icon: Bot,
     title: "BhaktiConnect",
-    description: "A spiritual AI companion for ISKCON devotees, providing personalized guidance, scriptural insights, and a supportive community.",
+    tagline: "Your Spiritual AI Companion.",
+    description: "BhaktiConnect is a unique spiritual assistant crafted especially for ISKCON devotees and seekers. It offers tools and guidance to help practitioners stay connected to their faith and live a balanced, devotional life.",
+     features: [
+      "AI-generated Timetables for Japa, Sadhana, and daily routines.",
+      "Access to sacred texts, kirtans, and lectures.",
+      "Community features to connect with temples and fellow devotees."
+    ],
     image: "https://placehold.co/600x400.png",
     aiHint: "spiritual ai"
-  },
-  {
-    icon: CalendarCheck,
-    title: "AI Timetable Planner",
-    description: "A personalized life scheduling tool that helps you organize your days with purpose, aligning your tasks with your long-term goals.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "schedule planner"
   },
 ];
 
@@ -37,7 +42,7 @@ export default function ProductsPage() {
               We craft premium technology that blends cutting-edge features with a deep respect for the human spirit. Our product pipeline is focused on creating a more intuitive and enlightened world.
             </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-12">
           {products.map((product) => {
             const Icon = product.icon;
             return (
@@ -48,7 +53,7 @@ export default function ProductsPage() {
                     alt={product.title}
                     width={600}
                     height={400}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-56 object-cover"
                     data-ai-hint={product.aiHint}
                   />
                 </CardHeader>
@@ -62,8 +67,20 @@ export default function ProductsPage() {
                         </div>
                         <Badge variant="outline" className="border-accent text-accent">Coming Soon</Badge>
                     </div>
-                    <CardContent className="p-0 flex-grow">
+                     <CardDescription className="text-lg italic text-muted-foreground mb-4">{product.tagline}</CardDescription>
+                    <CardContent className="p-0 flex-grow space-y-6">
                       <p className="text-muted-foreground">{product.description}</p>
+                      <div>
+                        <h4 className="font-semibold text-lg mb-3 text-foreground">Key Features:</h4>
+                        <ul className="space-y-2">
+                          {product.features.map(feature => (
+                            <li key={feature} className="flex items-start gap-3">
+                              <CheckCircle className="w-5 h-5 text-primary/80 mt-1 shrink-0"/>
+                              <span className="text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </CardContent>
                 </div>
               </Card>

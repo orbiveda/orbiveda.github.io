@@ -22,7 +22,7 @@ const timelineEvents = [
   {
     year: "2025",
     title: "Building the Foundation",
-    description: "Development begins on our foundational products: TrueBond, BhaktiConnect, and the AI Timetable Planner, setting the stage for a new era of tech."
+    description: "Development begins on our foundational products: TrueBond, BhaktiConnect, and other visionary tools."
   },
   {
     year: "Future",
@@ -84,15 +84,15 @@ export default function AboutPage() {
           </div>
           <div className="order-2 md:order-1 space-y-6">
             <div>
-              <h3 className="text-2xl font-semibold mb-2 text-primary">Our Mission</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-primary">About Orbiveda</h3>
               <p className="text-lg text-muted-foreground">
-                At Orbiveda, we believe technology should not only be intelligent but also intuitive and soulful. Our mission is to forge a new paradigm where cutting-edge innovation harmonizes with deep-seated spiritual wisdom, creating products that elevate human consciousness.
+                Orbiveda is a next-generation technology company on a mission to blend innovation with purpose. Founded on the belief that cutting-edge advancements should empower humanity, we design solutions that not only transform lives but also nurture the soul.
               </p>
             </div>
              <div>
-              <h3 className="text-2xl font-semibold mb-2 text-accent">Our Vision</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-accent">Our Approach</h3>
               <p className="text-lg text-muted-foreground">
-                Our vision is a future where technology acts as a bridge to deeper self-understanding and universal connection. We are dedicated to crafting elegant, futuristic solutions that empower individuals on their journey of growth and discovery.
+                At Orbiveda, we merge futuristic technologies like Artificial Intelligence and seamless digital experiences with timeless wisdom, creating tools that help people connect deeper—to themselves, their communities, and their world. With a focus on ethical innovation, our vision is to become a global leader in building technology ecosystems that promote mindfulness, growth, and progress.
               </p>
             </div>
           </div>

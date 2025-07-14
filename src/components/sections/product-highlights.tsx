@@ -9,17 +9,17 @@ const highlightedProducts = [
   {
     icon: Users,
     title: "TrueBond",
-    description: "An AI-powered platform to foster deep, meaningful social connections.",
+    description: "A revolutionary platform to foster genuine human connections in an AI-first world.",
   },
   {
     icon: Bot,
     title: "BhaktiConnect",
-    description: "A spiritual AI companion for ISKCON devotees, providing personalized guidance.",
+    description: "A unique spiritual AI assistant crafted for ISKCON devotees and seekers.",
   },
   {
     icon: CalendarCheck,
-    title: "AI Timetable Planner",
-    description: "A personalized life scheduling tool that helps you organize your days with purpose.",
+    title: "Visionary Tools",
+    description: "Explore our suite of tools designed for a more mindful and organized life.",
   },
 ];
 
