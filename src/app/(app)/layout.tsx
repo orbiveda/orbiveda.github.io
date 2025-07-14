@@ -7,6 +7,7 @@ import {
   SidebarInset,
 } from "@/components/ui/sidebar"
 import { PageTransition } from "@/components/layout/page-transition"
+import ScrollToTop from "@/components/ui/scroll-to-top"
 
 export default function AppLayout({
   children,
@@ -23,6 +24,7 @@ export default function AppLayout({
             <PageTransition>{children}</PageTransition>
           </main>
           <Footer />
+          <ScrollToTop />
         </SidebarInset>
       </div>
     </SidebarProvider>

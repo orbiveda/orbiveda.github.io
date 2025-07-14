@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { MoveRight } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function AboutSummary() {
@@ -25,8 +24,7 @@ export default function AboutSummary() {
             </Button>
           </div>
           <div className="flex justify-center">
-            <Image
-              key="about-summary-main"
+            <img
               src="/orbiveda-main.png"
               alt="Orbiveda Vision"
               width={500}
