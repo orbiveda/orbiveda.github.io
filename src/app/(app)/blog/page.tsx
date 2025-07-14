@@ -7,17 +7,17 @@ import { ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
-    title: "The Soul of Connection: Our Vision for TrueBond",
+    title: "Visual Connection App: Redefining Human Interaction",
     date: "October 26, 2024",
-    description: "Explore the philosophy behind TrueBond and how we're building an AI to foster genuine human connection.",
+    description: "In a world oversaturated with notifications and digital noise, Visual Connection is a bold step towards genuine and effortless communication. Unlike traditional video calls or static messaging, it leverages real-time gesture recognition and AI-assisted visual cues to make conversations more human-centric.",
     image: "https://placehold.co/600x400.png",
     aiHint: "futuristic connection",
-    slug: "/blog/soul-of-connection",
+    slug: "/blog/visual-connection",
   },
   {
-    title: "Digital Devotion: Engineering BhaktiConnect",
+    title: "BhaktiConnect App: Technology Meets Spirituality",
     date: "October 15, 2024",
-    description: "A look into the design principles of BhaktiConnect, an AI companion for spiritual practice in the modern world.",
+    description: "In today’s fast-paced digital world, BhaktiConnect is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide.",
     image: "https://placehold.co/600x400.png",
     aiHint: "digital spirituality",
     slug: "/blog/digital-devotion",
