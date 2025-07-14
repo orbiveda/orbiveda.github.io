@@ -13,7 +13,7 @@ export default function AboutPage() {
             </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           <div className="flex justify-center order-1 md:order-2">
             <Image 
               src="https://placehold.co/600x600.png"
@@ -39,6 +39,14 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
+        <div className="text-center max-w-4xl mx-auto">
+            <h3 className="text-3xl font-bold mb-4 text-primary">Our Story</h3>
+            <p className="text-lg text-muted-foreground">
+              Founded on the principle that the next leap in technology must be a leap in consciousness, Orbiveda was born from a desire to reconcile the digital with the divine. Our journey began with a simple question: What if our devices could not only connect us to information, but also to ourselves and each other on a more meaningful level? This question drives our every innovation, as we explore the synthesis of advanced AI, beautiful design, and ancient wisdom to build a more enlightened world, one product at a time.
+            </p>
+        </div>
+
       </div>
     </section>
   );
