@@ -1,3 +1,8 @@
+/*
+ * © 2025 Orbiveda™. All Rights Reserved.
+ * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
+ */
+
 import AnimatedOrb from '@/components/ui/animated-orb';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';

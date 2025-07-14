@@ -1,3 +1,7 @@
+/*
+ * © 2025 Orbiveda™. All Rights Reserved.
+ * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
+ */
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Users, Bot, CheckCircle } from "lucide-react";

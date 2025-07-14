@@ -1,3 +1,8 @@
+/*
+ * © 2025 Orbiveda™. All Rights Reserved.
+ * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
+ */
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function PrivacyPolicyPage() {

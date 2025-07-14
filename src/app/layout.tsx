@@ -1,3 +1,8 @@
+/*
+ * © 2025 Orbiveda™. All Rights Reserved.
+ * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
+ */
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";

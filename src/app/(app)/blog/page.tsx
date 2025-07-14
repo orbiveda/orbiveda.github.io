@@ -1,3 +1,7 @@
+/*
+ * © 2025 Orbiveda™. All Rights Reserved.
+ * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
+ */
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

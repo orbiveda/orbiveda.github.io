@@ -1,3 +1,8 @@
+/*
+ * © 2025 Orbiveda™. All Rights Reserved.
+ * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
+ */
+
 "use client";
 
 import Link from 'next/link';
