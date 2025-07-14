@@ -7,7 +7,7 @@ import AboutSummary from './about-summary';
 export default function HeroSection() {
   return (
     <>
-      <section id="home" className="relative flex items-center justify-center min-h-screen text-center overflow-hidden bg-background">
+      <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-80px)] text-center overflow-hidden bg-background">
         <div className="absolute inset-0 z-0">
           <AnimatedOrb />
         </div>

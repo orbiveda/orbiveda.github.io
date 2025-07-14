@@ -23,19 +23,14 @@ const navLinks = [
   { href: "/feedback", label: "Contact", icon: MessageSquare },
 ]
 
-interface AppSidebarProps {
-  isMobile?: boolean;
-}
-
-export default function AppSidebar({ isMobile = false }: AppSidebarProps) {
+export default function AppSidebar() {
   const pathname = usePathname()
 
-  if (isMobile) {
-    return (
-       <div className="flex flex-col h-full">
-         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-8 pl-3">
-            <Image key="sidebar-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={150} height={60} />
-         </Link>
+  return (
+      <div className="flex flex-col h-full px-4">
+        <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-8 pl-3">
+          <img src="/img/orbiveda-foot.png" alt="Orbiveda Logo" className='h-[45px] w-auto' />
+        </Link>
         <ul className="flex flex-col gap-2">
           {navLinks.map((link) => {
             const Icon = link.icon;
@@ -56,32 +51,5 @@ export default function AppSidebar({ isMobile = false }: AppSidebarProps) {
           })}
         </ul>
       </div>
-    );
-  }
-
-  return (
-    <aside className="hidden md:flex flex-col w-64 bg-card border-r border-border p-4">
-       <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105 mt-4 mb-8">
-            <Image key="header-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
-        </Link>
-       <nav className="flex flex-col gap-2">
-        {navLinks.map((link) => {
-            const Icon = link.icon;
-            return (
-                <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                    "flex items-center gap-3 rounded-md px-3 py-2 text-muted-foreground transition-colors hover:text-primary",
-                    pathname === link.href && "text-primary bg-muted"
-                    )}
-                >
-                    <Icon className="w-5 h-5" />
-                    <span>{link.label}</span>
-                </Link>
-            )
-        })}
-      </nav>
-    </aside>
-  )
+  );
 }
