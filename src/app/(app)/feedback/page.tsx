@@ -51,9 +51,9 @@ export default function FeedbackPage() {
   }
 
   return (
-    <section id="feedback" className="py-20 lg:py-32 bg-background">
+    <section id="feedback" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center pt-20 max-w-4xl mx-auto">
+        <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
               Have a question, a suggestion, or just want to connect? We'd love to hear from you.

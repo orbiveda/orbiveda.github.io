@@ -2,9 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function PrivacyPolicyPage() {
   return (
-    <section className="py-20 lg:py-32 bg-background">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center pt-20 max-w-4xl mx-auto mb-12">
+        <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h2>
             <p className="text-lg text-muted-foreground">Last updated: October 26, 2024</p>
         </div>

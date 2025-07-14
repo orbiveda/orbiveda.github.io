@@ -35,9 +35,9 @@ const products = [
 
 export default function ProductsPage() {
   return (
-    <section id="products" className="py-20 lg:py-32 bg-background">
+    <section id="products" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center pt-20 max-w-4xl mx-auto">
+        <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Vision for the Future</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-16">
               We craft premium technology that blends cutting-edge features with a deep respect for the human spirit. Our product pipeline is focused on creating a more intuitive and enlightened world.

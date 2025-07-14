@@ -12,9 +12,9 @@ export default function AppLayout({
   return (
     <div className="flex min-h-screen bg-background">
       <AppSidebar />
-      <div className="flex flex-col flex-1">
+      <div className="flex flex-col flex-1 overflow-hidden">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow overflow-y-auto">
           <PageTransition>{children}</PageTransition>
         </main>
         <Footer />

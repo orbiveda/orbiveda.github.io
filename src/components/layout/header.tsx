@@ -15,9 +15,11 @@ export default function Header() {
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-            <Image key="header-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
-          </Link>
+          <div className="md:hidden">
+             <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
+                <Image key="header-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={150} height={60} />
+            </Link>
+          </div>
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
@@ -26,13 +28,8 @@ export default function Header() {
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col h-full">
-                   <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-8">
-                      <Image key="sidebar-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={150} height={60} />
-                   </Link>
-                   <AppSidebar isMobile />
-                </nav>
+              <SheetContent side="left" className="w-[300px] sm:w-[400px] p-0">
+                <AppSidebar isMobile />
               </SheetContent>
             </Sheet>
           </div>

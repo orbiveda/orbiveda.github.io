@@ -33,14 +33,14 @@ const itemVariants = {
 
 export default function AboutPage() {
   return (
-    <section id="about" className="py-20 lg:py-32 bg-background text-foreground">
+    <section id="about" className="py-16 md:py-24">
       <motion.div 
         className="container mx-auto px-4"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
-        <motion.div className="text-center pt-20 max-w-4xl mx-auto mb-16" variants={itemVariants}>
+        <motion.div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto mb-16" variants={itemVariants}>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
               Fusing <span className="text-primary">Innovation</span> with Timeless <span className="text-accent/80">Wisdom</span>
             </h2>

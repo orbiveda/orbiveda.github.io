@@ -47,7 +47,7 @@ const itemVariants = {
 
 export default function InnovationPage() {
   return (
-    <section id="innovation" className="relative py-20 lg:py-32 bg-background overflow-hidden">
+    <section id="innovation" className="relative py-16 md:py-24 bg-background overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl opacity-30 animate-pulse animation-delay-4000"></div>
@@ -59,7 +59,7 @@ export default function InnovationPage() {
         animate="visible"
         variants={containerVariants}
       >
-        <motion.div className="text-center pt-20 max-w-4xl mx-auto mb-16" variants={itemVariants}>
+        <motion.div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto mb-16" variants={itemVariants}>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
             Where Technology Meets Purpose
           </h2>

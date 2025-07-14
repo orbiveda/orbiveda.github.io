@@ -34,9 +34,9 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <section id="blog" className="py-20 lg:py-32 bg-background">
+    <section id="blog" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center pt-20 max-w-4xl mx-auto">
+        <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">From the Orb</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-16">
               Insights, ideas, and updates from the team at Orbiveda.
