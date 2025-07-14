@@ -4,7 +4,6 @@
  */
 
 import { Instagram, Twitter, Linkedin } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -14,7 +13,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start col-span-1 md:col-span-2">
                  <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-4">
-                    <Image src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
+                    <img src="/img/orbiveda-logo.png" alt="Orbiveda Logo" className='h-auto w-44' />
                 </Link>
                 <p className="text-muted-foreground max-w-xs">Shaping the future with purpose by blending cutting-edge technology with timeless wisdom.</p>
             </div>

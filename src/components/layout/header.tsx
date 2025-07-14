@@ -9,7 +9,6 @@ import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import AppSidebar from './sidebar';
 import { usePathname } from 'next/navigation';
@@ -35,7 +34,7 @@ export default function Header() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-              <Image src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} className='h-auto' priority />
+              <img src="/img/orbiveda-logo.png" alt="Orbiveda Logo" className='h-auto w-44' />
           </Link>
 
           {/* Desktop Navigation */}
