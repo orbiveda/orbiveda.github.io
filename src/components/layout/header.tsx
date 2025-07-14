@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useSidebar } from '@/components/ui/sidebar';
+import AppSidebar from './sidebar';
 
 export default function Header() {
   const { toggleSidebar } = useSidebar();
@@ -14,6 +15,7 @@ export default function Header() {
     <header className={cn(
       "sticky top-0 left-0 w-full z-30 bg-background/80 backdrop-blur-lg border-b border-border"
     )}>
+      <AppSidebar />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
