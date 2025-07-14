@@ -8,10 +8,11 @@ import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { href: '/about', label: 'About' },
+  { href: '/about', label: 'About Us' },
   { href: '/products', label: 'Products' },
+  { href: '/innovation', label: 'Innovation' },
   { href: '/blog', label: 'Blog' },
-  { href: '/feedback', label: 'Feedback' },
+  { href: '/feedback', label: 'Contact' },
 ];
 
 export default function Header() {

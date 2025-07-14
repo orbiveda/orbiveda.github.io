@@ -3,7 +3,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, hsl(var(--primary) / 0.8) 0%, hsl(222 84% 4.9% / 0.1) 60%);
+  background: radial-gradient(circle, hsl(var(--primary) / 0.6) 0%, hsl(var(--background)) 60%);
   animation: float 12s ease-in-out infinite, glow 12s ease-in-out infinite;
   filter: blur(40px);
   opacity: 0.7;
@@ -27,16 +27,19 @@
   width: 120%;
   height: 120%;
   border-radius: 50%;
-  background: radial-gradient(circle, hsla(var(--primary), 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, hsla(var(--accent), 0.1) 0%, transparent 70%);
   filter: blur(20px);
   z-index: -1;
 }
 
 @keyframes float {
-  0% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-30px) scale(1.05); }
-  100% { transform: translateY(0px) scale(1); }
+  0% { transform: translateY(0px) translateX(0px) scale(1); }
+  25% { transform: translateY(-20px) translateX(15px) scale(1.05); }
+  50% { transform: translateY(10px) translateX(-10px) scale(1); }
+  75% { transform: translateY(-15px) translateX(20px) scale(1.05); }
+  100% { transform: translateY(0px) translateX(0px) scale(1); }
 }
+
 
 @keyframes glow {
   0% {
@@ -45,9 +48,9 @@
                 0 0 140px hsla(var(--accent), 0.2);
   }
   50% {
-    box-shadow: 0 0 70px hsla(var(--accent), 0.4), 
-                0 0 120px hsla(var(--accent), 0.2), 
-                0 0 170px hsla(var(--primary), 0.2);
+    box-shadow: 0 0 80px hsla(var(--accent), 0.5), 
+                0 0 130px hsla(var(--accent), 0.3), 
+                0 0 180px hsla(var(--primary), 0.3);
   }
   100% {
     box-shadow: 0 0 60px hsla(var(--primary), 0.4), 

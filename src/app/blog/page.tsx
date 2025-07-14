@@ -6,28 +6,28 @@ import { ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
-    title: "The Soul of the Machine: Our Vision for Conscious AI",
+    title: "The Soul of Connection: Our Vision for TrueBond",
     date: "October 26, 2024",
-    description: "Explore the philosophy behind Orb AI and how we're building artificial intelligence that understands more than just data.",
+    description: "Explore the philosophy behind TrueBond and how we're building an AI to foster genuine human connection.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "futuristic AI",
-    slug: "/blog/soul-of-the-machine",
+    aiHint: "futuristic connection",
+    slug: "/blog/soul-of-connection",
   },
   {
-    title: "Digital Sanctuaries: Designing the Spiritual OS",
+    title: "Digital Devotion: Engineering BhaktiConnect",
     date: "October 15, 2024",
-    description: "A look into the design principles of the Spiritual OS, an ecosystem built for mindfulness in a digital world.",
+    description: "A look into the design principles of BhaktiConnect, an AI companion for spiritual practice in the modern world.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "digital meditation",
-    slug: "/blog/digital-sanctuaries",
+    aiHint: "digital spirituality",
+    slug: "/blog/digital-devotion",
   },
   {
-    title: "Beyond the Screen: Augmented Reality for Human Flourishing",
+    title: "AI for a Balanced Life: The AI Timetable Planner",
     date: "October 1, 2024",
-    description: "Our Vision Devices are more than just hardware. They are windows into a new way of perceiving the world, designed to enhance well-being.",
+    description: "Discover how our AI Timetable Planner is designed to help you organize your life with purpose and clarity.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "augmented reality",
-    slug: "/blog/beyond-the-screen",
+    aiHint: "organized planning",
+    slug: "/blog/balanced-life-ai",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function BlogPage() {
                   alt={post.title}
                   width={600}
                   height={400}
-                  className="rounded-t-lg"
+                  className="rounded-t-lg object-cover"
                   data-ai-hint={post.aiHint}
                 />
               </CardHeader>

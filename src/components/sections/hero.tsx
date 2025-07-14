@@ -15,16 +15,16 @@ export default function HeroSection() {
           Innovation Meets Soul
         </h1>
         <p className="mt-6 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-          Welcome to Orbiveda, where we blend cutting-edge technology with spiritual wisdom to create a harmonious future.
+          Shaping the future with purpose by blending cutting-edge technology with timeless wisdom.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
-          <Button asChild size="lg">
-            <Link href="/products">Our Products</Link>
-          </Button>
           <Button asChild size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 hover:border-primary">
             <Link href="/about">
-              Discover More <MoveRight className="ml-2 h-5 w-5" />
+              Learn More <MoveRight className="ml-2 h-5 w-5" />
             </Link>
+          </Button>
+           <Button asChild size="lg">
+            <Link href="/products">Explore Our Vision</Link>
           </Button>
         </div>
       </div>

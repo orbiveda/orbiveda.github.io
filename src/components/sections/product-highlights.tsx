@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BrainCircuit, Eye, Sparkles } from "lucide-react";
+import { Users, Bot, CalendarCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -7,19 +7,19 @@ import { MoveRight } from "lucide-react";
 
 const highlightedProducts = [
   {
-    icon: BrainCircuit,
-    title: "Orb AI",
-    description: "A revolutionary AI that understands context and emotion, designed to be a true partner.",
+    icon: Users,
+    title: "TrueBond",
+    description: "An AI-powered platform to foster deep, meaningful social connections.",
   },
   {
-    icon: Sparkles,
-    title: "Spiritual OS",
-    description: "An operating system for your life, integrating mindfulness and personal growth tools.",
+    icon: Bot,
+    title: "BhaktiConnect",
+    description: "A spiritual AI companion for ISKCON devotees, providing personalized guidance.",
   },
   {
-    icon: Eye,
-    title: "Vision Devices",
-    description: "Augmented reality hardware that overlays digital information with a focus on well-being.",
+    icon: CalendarCheck,
+    title: "AI Timetable Planner",
+    description: "A personalized life scheduling tool that helps you organize your days with purpose.",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function ProductHighlights() {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
             <div className="p-2 bg-primary/10 rounded-full mb-4 inline-block">
-                <span className="text-primary font-semibold px-2">Our Innovations</span>
+                <span className="text-primary font-semibold px-2">Our Vision</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Crafting the Future</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-16">
@@ -46,7 +46,7 @@ export default function ProductHighlights() {
                     <Icon className="w-10 h-10 text-primary" />
                   </div>
                   <CardTitle className="text-2xl">{product.title}</CardTitle>
-                   <Badge variant="secondary" className="mt-2">Coming Soon</Badge>
+                   <Badge variant="outline" className="mt-2 border-accent text-accent">Coming Soon</Badge>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground">{product.description}</p>
