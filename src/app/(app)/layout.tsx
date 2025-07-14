@@ -11,10 +11,8 @@ export default function AppLayout({
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <Header />
-      <main className="flex-grow">
-        <div className="flex-grow overflow-x-hidden">
-           <PageTransition>{children}</PageTransition>
-        </div>
+      <main className="flex-grow overflow-x-hidden">
+        <PageTransition>{children}</PageTransition>
       </main>
       <Footer />
       <ScrollToTop />

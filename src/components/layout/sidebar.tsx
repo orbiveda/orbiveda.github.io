@@ -12,7 +12,6 @@ import {
   Home,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
-import Image from "next/image"
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
@@ -27,29 +26,31 @@ export default function AppSidebar() {
   const pathname = usePathname()
 
   return (
-      <div className="flex flex-col h-full px-4">
+      <div className="flex flex-col h-full p-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-8 pl-3">
-          <img src="/img/orbiveda-foot.png" alt="Orbiveda Logo" className='h-[45px] w-auto' />
+          <img src="/img/orbiveda-foot.png" alt="Orbiveda Logo" className='h-auto w-40' />
         </Link>
-        <ul className="flex flex-col gap-2">
-          {navLinks.map((link) => {
-            const Icon = link.icon;
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={cn(
-                    "flex items-center gap-3 rounded-md p-3 text-lg font-medium transition-colors hover:bg-muted",
-                    pathname === link.href ? "bg-muted text-primary" : "text-foreground"
-                  )}
-                >
-                  <Icon className="w-6 h-6" />
-                  <span>{link.label}</span>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
+        <nav>
+          <ul className="flex flex-col gap-2">
+            {navLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className={cn(
+                      "flex items-center gap-3 rounded-md p-3 text-lg font-medium transition-colors hover:bg-muted",
+                      pathname === link.href ? "bg-muted text-primary" : "text-foreground"
+                    )}
+                  >
+                    <Icon className="w-6 h-6" />
+                    <span>{link.label}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
   );
 }
