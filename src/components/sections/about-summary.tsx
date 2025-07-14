@@ -31,7 +31,6 @@ export default function AboutSummary() {
               width={500}
               height={500}
               className="rounded-xl shadow-2xl shadow-primary/10 transform hover:scale-105 transition-transform duration-500"
-              data-ai-hint="vision future"
             />
           </div>
         </div>
