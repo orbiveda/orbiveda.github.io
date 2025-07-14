@@ -40,7 +40,7 @@ export default function Footer() {
                     <a href="https://instagram.com/orbiveda" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-transform hover:scale-125">
                     <Instagram className="h-6 w-6" />
                     </a>
-                    <a href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-transform hover:scale-125">
+                    <a href="https://twitter.com/orbiveda" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-transform hover:scale-125">
                     <Twitter className="h-6 w-6" />
                     </a>
                     <a href="#" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-transform hover:scale-125">
