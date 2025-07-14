@@ -31,7 +31,7 @@ export default function AboutSummary() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/img/orbiveda-main.png"
+              src="https://placehold.co/500x500.png"
               alt="Orbiveda Vision"
               width={500}
               height={500}

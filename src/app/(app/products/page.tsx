@@ -1,12 +1,14 @@
 /*
- * © 2025 Orbiveda™. All Rights Reserved.
+ * © 2025 Orbiveda. All Rights Reserved.
  * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
  */
 
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Users, Bot, CheckCircle } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
+import { Users, Bot, CheckCircle, Download } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const products = [
   {
@@ -32,7 +34,7 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "/img/bhaktipath-app.png",
+    image: "https://placehold.co/600x400.png",
     aiHint: "spiritual ai"
   },
 ];
@@ -88,6 +90,14 @@ export default function ProductsPage() {
                       </div>
                     </CardContent>
                 </div>
+                <CardFooter className="p-6 pt-4">
+                  <Button asChild variant="secondary" className="w-full" disabled>
+                    <Link href="#">
+                      <Download className="mr-2 h-4 w-4" />
+                      Download APK (Coming Soon)
+                    </Link>
+                  </Button>
+                </CardFooter>
               </Card>
             )
           })}

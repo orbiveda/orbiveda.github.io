@@ -22,7 +22,7 @@ const blogPosts = [
     title: "BhaktiPath: Technology Meets Spirituality",
     date: "July 15, 2025",
     description: "In today’s fast-paced digital world, BhaktiPath is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide. This isn’t just an app—it’s a companion for your spiritual journey.",
-    image: "/img/bhaktipath-app.png",
+    image: "https://placehold.co/600x400.png",
     aiHint: "digital spirituality",
     slug: "/blog/bhaktipath-digital-devotion",
   },
