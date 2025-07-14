@@ -3,15 +3,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-  
   return (
     <footer className="bg-card border-t border-border/50">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start col-span-1 md:col-span-2">
                  <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-4">
-                    <Image key="footer-logo" src="/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
+                    <Image key="footer-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
                 </Link>
                 <p className="text-muted-foreground max-w-xs">Shaping the future with purpose by blending cutting-edge technology with timeless wisdom.</p>
             </div>

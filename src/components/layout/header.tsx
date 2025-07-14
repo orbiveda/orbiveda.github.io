@@ -19,7 +19,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-            <Image key="header-logo" src="/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
+            <Image key="header-logo" src="/img/orbiveda-foot.png" alt="Orbiveda Logo" width={180} height={70} />
           </Link>
           <div className="md:hidden">
             <Button variant="ghost" size="icon" onClick={toggleSidebar}>

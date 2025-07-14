@@ -27,7 +27,7 @@ export default function AboutSummary() {
           <div className="flex justify-center">
             <Image
               key="about-summary-main"
-              src="/orbiveda-main.png"
+              src="/img/orbiveda-main.png"
               alt="Orbiveda Vision"
               width={500}
               height={500}

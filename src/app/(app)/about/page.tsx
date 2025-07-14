@@ -53,7 +53,7 @@ export default function AboutPage() {
           <div className="flex justify-center order-1 md:order-2">
             <Image 
               key="about-main"
-              src="/orbiveda-main.png"
+              src="/img/orbiveda-main.png"
               alt="Orbiveda Vision"
               width={600}
               height={600}
