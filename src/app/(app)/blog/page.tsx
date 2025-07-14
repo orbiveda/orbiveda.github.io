@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -7,9 +6,9 @@ import { ArrowRight } from "lucide-react";
 
 const blogPosts = [
   {
-    title: "Visual Connection App: Redefining Human Interaction",
+    title: "TrueBond: Redefining Human Interaction",
     date: "October 26, 2024",
-    description: "In a world oversaturated with notifications and digital noise, Visual Connection is a bold step towards genuine and effortless communication. Unlike traditional video calls or static messaging, it leverages real-time gesture recognition and AI-assisted visual cues to make conversations more human-centric.",
+    description: "TrueBond is Orbiveda’s revolutionary platform designed to foster genuine human connections in an AI-first world. It combines advanced algorithms with a mindful design to help users build real, purposeful relationships—whether with friends, families, or like-minded communities.",
     image: "https://placehold.co/600x400.png",
     aiHint: "futuristic connection",
     slug: "/blog/visual-connection",
@@ -17,7 +16,7 @@ const blogPosts = [
   {
     title: "BhaktiConnect App: Technology Meets Spirituality",
     date: "October 15, 2024",
-    description: "In today’s fast-paced digital world, BhaktiConnect is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide.",
+    description: "In today’s fast-paced digital world, BhaktiConnect is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide. This isn’t just an app—it’s a companion for your spiritual journey.",
     image: "https://placehold.co/600x400.png",
     aiHint: "digital spirituality",
     slug: "/blog/digital-devotion",

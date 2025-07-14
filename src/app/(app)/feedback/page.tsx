@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Send, Instagram } from "lucide-react";
+import { Send } from "lucide-react";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 
@@ -59,76 +59,55 @@ export default function FeedbackPage() {
               Have a question, a suggestion, or just want to connect? We'd love to hear from you.
             </p>
         </div>
-        <div className="grid md:grid-cols-5 gap-12 items-start">
-            <div className="md:col-span-2 space-y-6">
-                <Card className="bg-card border p-6">
-                    <CardHeader className="p-0 mb-4">
-                        <CardTitle className="flex items-center gap-3 text-2xl">
-                            Contact Information
-                        </CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-0 space-y-6 text-lg">
-                        <div className="flex items-center gap-4">
-                            <Mail className="text-primary w-6 h-6"/>
-                            <a href="mailto:orbiveda@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">orbiveda@gmail.com</a>
-                        </div>
-                        <div className="flex items-center gap-4">
-                           <Instagram className="text-primary w-6 h-6"/>
-                            <a href="https://instagram.com/orbiveda" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">@orbiveda</a>
-                        </div>
-                    </CardContent>
-                </Card>
-            </div>
-            <div className="md:col-span-3">
-                 <Card className="bg-card border p-6 md:p-8">
-                    <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                        <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Name</FormLabel>
-                                <FormControl>
-                                <Input placeholder="Your Name" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="email"
-                            render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Email</FormLabel>
-                                <FormControl>
-                                <Input placeholder="your.email@example.com" {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="message"
-                            render={({ field }) => (
-                            <FormItem>
-                                <FormLabel>Message</FormLabel>
-                                <FormControl>
-                                <Textarea placeholder="Share your feedback with us..." rows={5} {...field} />
-                                </FormControl>
-                                <FormMessage />
-                            </FormItem>
-                            )}
-                        />
-                        <Button type="submit" size="lg" className="w-full">
-                            Send Feedback <Send className="ml-2 w-4 h-4"/>
-                        </Button>
-                        </form>
-                    </Form>
-                </Card>
-            </div>
+        <div className="max-w-2xl mx-auto">
+             <Card className="bg-card border p-6 md:p-8">
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                    <FormField
+                        control={form.control}
+                        name="name"
+                        render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Name</FormLabel>
+                            <FormControl>
+                            <Input placeholder="Your Name" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                        )}
+                    />
+                    <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Email</FormLabel>
+                            <FormControl>
+                            <Input placeholder="your.email@example.com" {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                        )}
+                    />
+                    <FormField
+                        control={form.control}
+                        name="message"
+                        render={({ field }) => (
+                        <FormItem>
+                            <FormLabel>Message</FormLabel>
+                            <FormControl>
+                            <Textarea placeholder="Share your feedback with us..." rows={5} {...field} />
+                            </FormControl>
+                            <FormMessage />
+                        </FormItem>
+                        )}
+                    />
+                    <Button type="submit" size="lg" className="w-full">
+                        Send Feedback <Send className="ml-2 w-4 h-4"/>
+                    </Button>
+                    </form>
+                </Form>
+            </Card>
         </div>
       </div>
     </section>
