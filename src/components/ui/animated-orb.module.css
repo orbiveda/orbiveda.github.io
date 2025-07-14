@@ -1,18 +1,20 @@
 .orb {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, hsl(var(--primary)) 0%, hsl(199, 100%, 74%) 100%);
-  animation: float 8s ease-in-out infinite, glow 8s ease-in-out infinite;
-  filter: blur(15px);
-  opacity: 0.6;
+  background: radial-gradient(circle, hsl(var(--primary) / 0.8) 0%, hsl(222 84% 4.9% / 0.1) 60%);
+  animation: float 12s ease-in-out infinite, glow 12s ease-in-out infinite;
+  filter: blur(40px);
+  opacity: 0.7;
+  transition: transform 0.2s linear;
 }
 
 @media (max-width: 768px) {
   .orb {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
+    filter: blur(30px);
   }
 }
 
@@ -32,24 +34,24 @@
 
 @keyframes float {
   0% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-25px) scale(1.05); }
+  50% { transform: translateY(-30px) scale(1.05); }
   100% { transform: translateY(0px) scale(1); }
 }
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 40px hsla(var(--primary), 0.5), 
-                0 0 80px hsla(var(--primary), 0.3), 
-                0 0 120px hsla(199, 100%, 74%, 0.3);
+    box-shadow: 0 0 60px hsla(var(--primary), 0.4), 
+                0 0 100px hsla(var(--primary), 0.2), 
+                0 0 140px hsla(var(--accent), 0.2);
   }
   50% {
-    box-shadow: 0 0 50px hsla(199, 100%, 74%, 0.5), 
-                0 0 100px hsla(199, 100%, 74%, 0.3), 
-                0 0 150px hsla(var(--primary), 0.3);
+    box-shadow: 0 0 70px hsla(var(--accent), 0.4), 
+                0 0 120px hsla(var(--accent), 0.2), 
+                0 0 170px hsla(var(--primary), 0.2);
   }
   100% {
-    box-shadow: 0 0 40px hsla(var(--primary), 0.5), 
-                0 0 80px hsla(var(--primary), 0.3), 
-                0 0 120px hsla(199, 100%, 74%, 0.3);
+    box-shadow: 0 0 60px hsla(var(--primary), 0.4), 
+                0 0 100px hsla(var(--primary), 0.2), 
+                0 0 140px hsla(var(--accent), 0.2);
   }
 }

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BrainCircuit, Eye, Sparkles } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const products = [
   {
@@ -22,26 +23,27 @@ const products = [
 export default function ProductsPage() {
   return (
     <section id="products" className="py-20 lg:py-32 bg-background">
-      <div className="container mx-auto px-4 text-center">
-        <div className="pt-20">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Innovations</h2>
-            <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-16">
-            We craft premium technology that blends cutting-edge features with a deep respect for the human spirit.
+      <div className="container mx-auto px-4">
+        <div className="text-center pt-20 max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Innovations</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-16">
+            We craft premium technology that blends cutting-edge features with a deep respect for the human spirit. Our product pipeline is focused on creating a more intuitive and enlightened world.
             </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {products.map((product) => {
             const Icon = product.icon;
             return (
-              <Card key={product.title} className="bg-card border border-border/50 text-center transition-all duration-300 hover:border-primary hover:shadow-xl hover:shadow-primary/20 hover:-translate-y-2">
+              <Card key={product.title} className="bg-card border text-center transition-all duration-300 hover:border-primary hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
                 <CardHeader className="items-center">
                   <div className="p-4 bg-primary/10 rounded-full mb-4">
                     <Icon className="w-10 h-10 text-primary" />
                   </div>
-                  <CardTitle>{product.title}</CardTitle>
+                  <CardTitle className="text-2xl">{product.title}</CardTitle>
+                   <Badge variant="secondary" className="mt-2">Coming Soon</Badge>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-foreground/80">{product.description}</p>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground">{product.description}</p>
                 </CardContent>
               </Card>
             )

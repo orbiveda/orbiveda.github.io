@@ -1,15 +1,14 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import ScrollToTop from '@/components/ui/scroll-to-top';
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-poppins'
+  variable: '--font-sans'
 });
 
 
@@ -25,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${poppins.variable} font-body antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`}>
         <div className="flex flex-col min-h-screen bg-background">
           <Header />
           <main className="flex-grow">

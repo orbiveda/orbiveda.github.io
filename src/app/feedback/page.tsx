@@ -52,15 +52,15 @@ export default function FeedbackPage() {
   return (
     <section id="feedback" className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center pt-20">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12">
-            Have a question or want to share some feedback? Send us a message.
+        <div className="text-center pt-20 max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
+              Have a question, a suggestion, or just want to connect? We'd love to hear from you.
             </p>
         </div>
         <div className="grid md:grid-cols-5 gap-12 items-start">
             <div className="md:col-span-2 space-y-6">
-                <Card className="bg-card border-border/50 p-6">
+                <Card className="bg-card border p-6">
                     <CardHeader className="p-0 mb-4">
                         <CardTitle className="flex items-center gap-3 text-2xl">
                             Contact Information
@@ -69,17 +69,17 @@ export default function FeedbackPage() {
                     <CardContent className="p-0 space-y-6 text-lg">
                         <div className="flex items-center gap-4">
                             <Mail className="text-primary w-6 h-6"/>
-                            <a href="mailto:orbiveda@gmail.com" className="text-foreground/80 hover:text-primary transition-colors">orbiveda@gmail.com</a>
+                            <a href="mailto:orbiveda@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">orbiveda@gmail.com</a>
                         </div>
                         <div className="flex items-center gap-4">
                            <Instagram className="text-primary w-6 h-6"/>
-                            <a href="https://instagram.com/orbiveda" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">@orbiveda</a>
+                            <a href="https://instagram.com/orbiveda" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">@orbiveda</a>
                         </div>
                     </CardContent>
                 </Card>
             </div>
             <div className="md:col-span-3">
-                 <Card className="bg-card border-border/50 p-6 md:p-8">
+                 <Card className="bg-card border p-6 md:p-8">
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                         <FormField
@@ -89,7 +89,7 @@ export default function FeedbackPage() {
                             <FormItem>
                                 <FormLabel>Name</FormLabel>
                                 <FormControl>
-                                <Input className="bg-background" placeholder="Your Name" {...field} />
+                                <Input placeholder="Your Name" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -102,7 +102,7 @@ export default function FeedbackPage() {
                             <FormItem>
                                 <FormLabel>Email</FormLabel>
                                 <FormControl>
-                                <Input className="bg-background" placeholder="your.email@example.com" {...field} />
+                                <Input placeholder="your.email@example.com" {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -115,13 +115,13 @@ export default function FeedbackPage() {
                             <FormItem>
                                 <FormLabel>Message</FormLabel>
                                 <FormControl>
-                                <Textarea className="bg-background" placeholder="Share your feedback with us..." rows={5} {...field} />
+                                <Textarea placeholder="Share your feedback with us..." rows={5} {...field} />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
                             )}
                         />
-                        <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90" size="lg">
+                        <Button type="submit" size="lg" className="w-full">
                             Send Feedback <Send className="ml-2 w-4 h-4"/>
                         </Button>
                         </form>
