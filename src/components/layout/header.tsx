@@ -45,7 +45,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-            <Image src="https://placehold.co/180x60.png" alt="Orbiveda Logo" width={140} height={40} data-ai-hint="logo" />
+            <Image src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/public%2Fimages%2F61eb43b5-4b53-488f-9a00-111ec7edc82c.png?alt=media" alt="Orbiveda Logo" width={180} height={70} data-ai-hint="logo" />
           </Link>
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
