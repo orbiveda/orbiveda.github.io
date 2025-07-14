@@ -132,9 +132,10 @@ section {
     font-weight: 600;
 }
 
-.logo img {
-    height: 40px;
-    margin-right: 10px;
+.main-logo {
+    height: 40px; /* Maintains aspect ratio */
+    width: auto; /* Allows rectangular logo */
+    max-width: 180px; /* Prevents overflow */
 }
 
 .nav-links {
@@ -567,9 +568,20 @@ section {
     margin-bottom: 20px;
 }
 
-.footer-logo img {
+.footer-logo-img {
     height: 30px;
-    margin-right: 10px;
+    width: auto;
+    filter: 
+        drop-shadow(0 0 2px rgba(255, 215, 0, 0.3)) /* Gold accent */
+        brightness(1.1); /* Enhances visibility */
+}
+
+.footer-logo:hover .footer-logo-img {
+    filter: 
+        drop-shadow(0 0 6px rgba(180, 130, 255, 0.7))
+        brightness(1.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .footer-links {
