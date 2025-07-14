@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function AboutSummary() {
+  const cacheBuster = `?v=${new Date().getTime()}`;
   return (
     <section className="py-20 lg:py-32 bg-background">
       <div className="container mx-auto px-4">
@@ -27,7 +28,7 @@ export default function AboutSummary() {
           <div className="flex justify-center">
             <Image
               key="about-summary-main"
-              src="/orbiveda-main.png"
+              src={`/orbiveda-main.png${cacheBuster}`}
               alt="Orbiveda Vision"
               width={500}
               height={500}
