@@ -31,12 +31,11 @@ export default function AboutSummary() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/500x500.png"
+              src="/img/orbiveda-main.png"
               alt="Orbiveda Vision"
               width={500}
               height={500}
               className="rounded-xl shadow-2xl shadow-primary/10 transform hover:scale-105 transition-transform duration-500 w-full"
-              data-ai-hint="abstract spiritual"
             />
           </div>
         </div>

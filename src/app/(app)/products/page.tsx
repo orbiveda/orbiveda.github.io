@@ -21,8 +21,9 @@ const products = [
       "Community spaces for deeper engagement.",
       "Mindful design to reduce digital fatigue."
     ],
-    image: "https://placehold.co/600x400.png",
-    aiHint: "social connection"
+    image: "/img/truebond-app.png",
+    width: 600,
+    height: 400
   },
   {
     icon: Bot,
@@ -34,8 +35,9 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "https://placehold.co/500x500.png",
-    aiHint: "spiritual ai"
+    image: "/img/bhaktipath-app.png",
+    width: 500,
+    height: 500
   },
 ];
 
@@ -58,10 +60,9 @@ export default function ProductsPage() {
                   <Image
                     src={product.image}
                     alt={product.title}
-                    width={product.title === "BhaktiPath" ? 500 : 600}
-                    height={product.title === "BhaktiPath" ? 500 : 400}
+                    width={product.width}
+                    height={product.height}
                     className="w-full"
-                    data-ai-hint={product.aiHint}
                   />
                 </CardHeader>
                 <div className="p-6 flex flex-col flex-grow">
