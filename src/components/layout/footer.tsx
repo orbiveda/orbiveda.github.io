@@ -1,5 +1,5 @@
 /*
- * © 2025 Orbiveda™. All Rights Reserved.
+ * © 2025 Orbiveda. All Rights Reserved.
  * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
  */
 
@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border/50 text-center text-muted-foreground text-sm">
-             <p>© 2025 Orbiveda™. All Rights Reserved. Unauthorized use or reproduction is strictly prohibited.</p>
+             <p>© 2025 Orbiveda. All Rights Reserved. Unauthorized use or reproduction is strictly prohibited.</p>
         </div>
       </div>
     </footer>

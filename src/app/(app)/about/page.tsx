@@ -1,5 +1,5 @@
 /*
- * © 2025 Orbiveda™. All Rights Reserved.
+ * © 2025 Orbiveda. All Rights Reserved.
  * Unauthorized copying, distribution, or modification of this code is strictly prohibited.
  */
 
@@ -60,7 +60,7 @@ export default function AboutPage() {
               alt="Orbiveda Vision"
               width={600}
               height={600}
-              className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500"
+              className="rounded-xl shadow-2xl shadow-primary/20 transform hover:scale-105 transition-transform duration-500 w-full"
               data-ai-hint="abstract spiritual"
             />
           </div>
