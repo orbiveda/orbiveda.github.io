@@ -11,7 +11,6 @@ const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/products', label: 'Products' },
   { href: '/feedback', label: 'Feedback' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 export default function Header() {
@@ -43,7 +42,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} className={cn("text-foreground/80 hover:text-primary transition-colors font-medium", {
-                "text-primary": pathname === link.href
+                "text-primary": pathname.startsWith(link.href)
               })}>
                 {link.label}
               </Link>
@@ -62,7 +61,7 @@ export default function Header() {
           <nav className="flex flex-col items-center space-y-6 pt-4 pb-8">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className={cn("text-lg text-foreground/80 hover:text-primary transition-colors", {
-                "text-primary": pathname === link.href
+                "text-primary": pathname.startsWith(link.href)
               })}>
                 {link.label}
               </Link>
