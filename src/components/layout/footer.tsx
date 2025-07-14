@@ -1,5 +1,5 @@
-import { Instagram, Twitter, Linkedin, HeartHandshake } from 'lucide-react';
-import { Sparkles } from 'lucide-react';
+import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Logo } from '@/components/ui/logo';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start col-span-1 md:col-span-2">
                  <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-4">
-                    <Sparkles className="w-7 h-7"/>
+                    <Logo className="w-8 h-8"/>
                     Orbiveda
                 </Link>
                 <p className="text-muted-foreground max-w-xs">Shaping the future with purpose by blending cutting-edge technology with timeless wisdom.</p>
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border/50 text-center text-muted-foreground text-sm">
-             <p>&copy; {currentYear} Orbiveda. All Rights Reserved.</p>
+             <p>&copy; {new Date().getFullYear()} Orbiveda. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
