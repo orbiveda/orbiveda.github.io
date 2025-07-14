@@ -1,11 +1,8 @@
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
-import {
-  SidebarProvider,
-  SidebarInset,
-} from "@/components/ui/sidebar"
 import { PageTransition } from "@/components/layout/page-transition"
 import ScrollToTop from "@/components/ui/scroll-to-top"
+import AppSidebar from "@/components/layout/sidebar"
 
 export default function AppLayout({
   children,
@@ -13,17 +10,16 @@ export default function AppLayout({
   children: React.ReactNode
 }) {
   return (
-    <SidebarProvider>
-      <div className="flex flex-col min-h-screen bg-background">
-        <SidebarInset>
-          <Header />
-          <main className="flex-grow">
-            <PageTransition>{children}</PageTransition>
-          </main>
-          <Footer />
-          <ScrollToTop />
-        </SidebarInset>
+    <div className="flex min-h-screen bg-background">
+      <AppSidebar />
+      <div className="flex flex-col flex-1">
+        <Header />
+        <main className="flex-grow">
+          <PageTransition>{children}</PageTransition>
+        </main>
+        <Footer />
+        <ScrollToTop />
       </div>
-    </SidebarProvider>
+    </div>
   )
 }
