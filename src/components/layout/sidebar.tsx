@@ -33,7 +33,7 @@ export default function AppSidebar() {
   return (
       <div className="flex flex-col h-full p-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-8 pl-3">
-          <Image src="https://placehold.co/160x36.png" alt="Orbiveda Logo" width={160} height={36} data-ai-hint="logo" />
+          <Image src="/img/orbiveda-logo.png" alt="Orbiveda Logo" width={160} height={36} data-ai-hint="logo" />
         </Link>
         <nav>
           <ul className="flex flex-col gap-2">

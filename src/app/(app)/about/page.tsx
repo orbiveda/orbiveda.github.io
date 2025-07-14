@@ -56,7 +56,7 @@ export default function AboutPage() {
         <motion.div className="grid md:grid-cols-2 gap-12 items-center mb-24" variants={itemVariants}>
           <div className="flex justify-center order-1 md:order-2">
             <Image 
-              src="https://placehold.co/600x600.png"
+              src="/img/orbiveda-main.png"
               alt="Orbiveda Vision"
               width={600}
               height={600}
