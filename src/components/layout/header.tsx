@@ -9,9 +9,10 @@ import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import AppSidebar from './sidebar';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -34,7 +35,7 @@ export default function Header() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-              <img src="/img/orbiveda-logo.png" alt="Orbiveda Logo" className='h-auto w-44' />
+              <Image src="https://placehold.co/176x40.png" alt="Orbiveda Logo" width={176} height={40} data-ai-hint="logo" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -63,6 +64,7 @@ export default function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px] sm:w-[400px] p-0 pt-8">
+                <SheetTitle className="sr-only">Menu</SheetTitle>
                 <AppSidebar />
               </SheetContent>
             </Sheet>

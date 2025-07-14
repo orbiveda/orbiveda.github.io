@@ -16,6 +16,7 @@ import {
   Home,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
@@ -32,7 +33,7 @@ export default function AppSidebar() {
   return (
       <div className="flex flex-col h-full p-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-8 pl-3">
-          <img src="/img/orbiveda-foot.png" alt="Orbiveda Logo" className='h-auto w-40' />
+          <Image src="https://placehold.co/160x36.png" alt="Orbiveda Logo" width={160} height={36} data-ai-hint="logo dark" />
         </Link>
         <nav>
           <ul className="flex flex-col gap-2">
