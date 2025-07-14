@@ -3,8 +3,6 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { MoveRight } from 'lucide-react';
 import AboutSummary from './about-summary';
-import ProductHighlights from './product-highlights';
-import Testimonials from './testimonials';
 
 export default function HeroSection() {
   return (
@@ -34,8 +32,6 @@ export default function HeroSection() {
         </div>
       </section>
       <AboutSummary />
-      <ProductHighlights />
-      <Testimonials />
     </>
   );
 }
