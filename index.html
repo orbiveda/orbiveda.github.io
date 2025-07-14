@@ -1,57 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Orbiveda | Innovation Meets Soul">
-  <title>Orbiveda | Innovation Meets Soul</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orbiveda - Where Innovation Meets Soul. Premium technology blending cutting-edge innovation with spiritual wisdom.">
+    <meta name="keywords" content="technology, innovation, spiritual tech, AI, Orbiveda">
+    <meta name="author" content="Orbiveda">
+    <title>Orbiveda | Innovation Meets Soul</title>
+    <link rel="icon" href="assets/orbiveda-favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="assets/orbiveda-logo.png" alt="Orbiveda Logo" height="40">
-    </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Orbiveda Logo">
+                <span>Orbiveda</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#testimonials">Clients</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Innovation Meets Soul</h1>
-    <p>Shaping the future with purpose. Discover how Orbiveda blends cutting-edge technology with timeless wisdom.</p>
-    <div class="buttons">
-      <a href="#about" class="btn-primary">Discover More</a>
-      <a href="#products" class="btn-secondary">Explore Products</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="orb-animation"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Innovation Meets <span class="highlight">Soul</span></h1>
+                <p class="fade-in">Where cutting-edge technology blends with timeless wisdom to create transformative solutions.</p>
+                <div class="cta-buttons fade-in">
+                    <a href="#about" class="btn btn-primary">Discover More</a>
+                    <a href="#products" class="btn btn-secondary">Our Products</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Orbiveda</h2>
-    <p>We are a futuristic company merging innovation and spiritual wisdom to create purposeful solutions.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight">Orbiveda</span></h2>
+                <p>Our vision for a harmonious technological future</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Mission</h3>
+                    <p>To create technology that not only advances human capability but also nurtures the human spirit, bridging the gap between innovation and consciousness.</p>
+                    <h3>Vision</h3>
+                    <p>We envision a world where technology serves as a catalyst for spiritual growth, where every advancement brings us closer to our true potential as conscious beings.</p>
+                </div>
+                <div class="about-image">
+                    <div class="glowing-card">
+                        <div class="inner-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Products Section -->
-  <section id="products" class="products">
-    <h2>Our Products</h2>
-    <p>Explore our range of offerings designed to uplift and empower humanity.</p>
-  </section>
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Products</span></h2>
+                <p>Innovative solutions for the modern soul</p>
+            </div>
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Orb AI</h3>
+                    <p>An artificial intelligence system designed with ethical frameworks and intuitive understanding.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spiritual OS</h3>
+                    <p>A revolutionary operating system that adapts to your consciousness patterns.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Vision Devices</h3>
+                    <p>Wearable technology that enhances perception and connects you to higher states.</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:orbiveda@gmail.com">orbiveda@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/orbiveda" target="_blank">@orbiveda</a></p>
-  </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted By <span class="highlight">Visionaries</span></h2>
+                <p>Leading organizations that believe in our mission</p>
+            </div>
+            <div class="client-logos">
+                <div class="logo-item">FutureTech</div>
+                <div class="logo-item">Conscious Inc</div>
+                <div class="logo-item">Nova Systems</div>
+                <div class="logo-item">Zenith Labs</div>
+                <div class="logo-item">Aether Group</div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    © 2025 Orbiveda. All rights reserved.
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <p>Connect with us for collaborations and inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> orbiveda@gmail.com</p>
+                    <p><i class="fab fa-instagram"></i> @orbiveda</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="Orbiveda Logo">
+                    <span>Orbiveda</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                    <a href="#testimonials">Clients</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Orbiveda. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="scripts/script.js"></script>
 </body>
-  </html>
+                  </html>
