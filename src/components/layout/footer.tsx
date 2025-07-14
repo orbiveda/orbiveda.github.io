@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 text-center md:text-left">
             <div className="flex flex-col items-center md:items-start col-span-1 md:col-span-2">
                  <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-4">
-                    <Image src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/public%2Fimages%2F61eb43b5-4b53-488f-9a00-111ec7edc82c.png?alt=media" alt="Orbiveda Logo" width={180} height={70} data-ai-hint="logo dark" />
+                    <Image src="/logo.png" alt="Orbiveda Logo" width={180} height={70} data-ai-hint="logo dark" />
                 </Link>
                 <p className="text-muted-foreground max-w-xs">Shaping the future with purpose by blending cutting-edge technology with timeless wisdom.</p>
             </div>

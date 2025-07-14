@@ -26,7 +26,7 @@ export default function AboutSummary() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/public%2Fimages%2F61eb43b5-4b53-488f-9a00-111ec7edc82c.png?alt=media"
+              src="/logo.png"
               alt="Orbiveda Logo"
               width={500}
               height={500}

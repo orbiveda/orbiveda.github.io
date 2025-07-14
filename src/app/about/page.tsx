@@ -51,7 +51,7 @@ export default function AboutPage() {
         <motion.div className="grid md:grid-cols-2 gap-12 items-center mb-24" variants={itemVariants}>
           <div className="flex justify-center order-1 md:order-2">
             <Image 
-              src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/public%2Fimages%2F61eb43b5-4b53-488f-9a00-111ec7edc82c.png?alt=media"
+              src="/logo.png"
               alt="Orbiveda Logo"
               width={600}
               height={600}
