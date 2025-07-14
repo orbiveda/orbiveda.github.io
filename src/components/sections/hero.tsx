@@ -1,0 +1,33 @@
+import AnimatedOrb from '@/components/ui/animated-orb';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { MoveRight } from 'lucide-react';
+
+export default function HeroSection() {
+  return (
+    <section id="home" className="relative flex items-center justify-center min-h-screen text-center overflow-hidden bg-background">
+      <div className="absolute inset-0 z-0">
+        <AnimatedOrb />
+      </div>
+      <div className="absolute inset-0 bg-background/50 z-10" />
+      <div className="relative z-20 flex flex-col items-center p-4">
+        <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+          Innovation Meets Soul
+        </h1>
+        <p className="mt-4 text-lg md:text-xl text-foreground/80 max-w-2xl">
+          Welcome to Orbiveda, where we blend cutting-edge technology with spiritual wisdom to create a harmonious future.
+        </p>
+        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
+            <a href="#products">Our Products</a>
+          </Button>
+          <Button asChild size="lg" variant="ghost" className="hover:bg-accent/20 hover:text-accent">
+            <a href="#about">
+              Discover More <MoveRight className="ml-2 h-5 w-5" />
+            </a>
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
