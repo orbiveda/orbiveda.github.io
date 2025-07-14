@@ -1,5 +1,7 @@
 import type {Config} from 'tailwindcss';
 
+const { fontFamily } = require("tailwindcss/defaultTheme")
+
 export default {
   darkMode: ['class'],
   content: [
@@ -17,9 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Poppins', 'sans-serif'],
-        headline: ['Poppins', 'sans-serif'],
-        code: ['monospace'],
+        body: ["var(--font-poppins)", ...fontFamily.sans],
+        sans: ["var(--font-poppins)", ...fontFamily.sans],
       },
       colors: {
         background: 'hsl(var(--background))',
