@@ -11,7 +11,7 @@ export default function TermsOfServicePage() {
       <div className="container mx-auto px-4">
         <div className="text-center pt-10 md:pt-16 max-w-4xl mx-auto mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Terms of Service</h2>
-            <p className="text-lg text-muted-foreground">Last updated: October 26, 2024</p>
+            <p className="text-lg text-muted-foreground">Last updated: July 15, 2025</p>
         </div>
         <Card className="max-w-4xl mx-auto bg-card border p-6 md:p-10">
             <CardHeader>

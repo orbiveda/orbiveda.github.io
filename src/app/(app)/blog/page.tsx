@@ -12,7 +12,7 @@ import { ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     title: "TrueBond: Redefining Human Interaction",
-    date: "October 26, 2024",
+    date: "July 15, 2025",
     description: "In a world oversaturated with notifications and digital noise, TrueBond is a bold step towards genuine and effortless communication. Unlike traditional video calls or static messaging, TrueBond leverages real-time gesture recognition, AI-assisted visual cues, and immersive UI to make conversations more human-centric.",
     image: "https://placehold.co/600x400.png",
     aiHint: "futuristic connection",
@@ -20,7 +20,7 @@ const blogPosts = [
   },
   {
     title: "BhaktiPath: Technology Meets Spirituality",
-    date: "October 15, 2024",
+    date: "July 15, 2025",
     description: "In today’s fast-paced digital world, BhaktiPath is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide. This isn’t just an app—it’s a companion for your spiritual journey.",
     image: "/img/bhaktipath-app.png",
     aiHint: "digital spirituality",
@@ -47,7 +47,7 @@ export default function BlogPage() {
                   alt={post.title}
                   width={600}
                   height={400}
-                  className="rounded-t-lg object-cover"
+                  className="rounded-t-lg w-full"
                   data-ai-hint={post.aiHint}
                 />
               </CardHeader>
