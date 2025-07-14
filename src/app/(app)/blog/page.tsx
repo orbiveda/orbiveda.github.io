@@ -22,7 +22,7 @@ const blogPosts = [
     title: "BhaktiConnect App: Technology Meets Spirituality",
     date: "October 15, 2024",
     description: "In today’s fast-paced digital world, BhaktiConnect is Orbiveda’s answer to seekers longing for balance and depth. It combines AI with timeless spiritual wisdom to help users plan their devotional routines, access scriptures, and connect with devotees worldwide. This isn’t just an app—it’s a companion for your spiritual journey.",
-    image: "https://placehold.co/600x400.png",
+    image: "/img/bhaktipath-app.png",
     aiHint: "digital spirituality",
     slug: "/blog/bhakticonnect-digital-devotion",
   },

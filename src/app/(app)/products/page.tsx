@@ -32,7 +32,7 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "https://placehold.co/600x400.png",
+    image: "/img/bhaktipath-app.png",
     aiHint: "spiritual ai"
   },
 ];
