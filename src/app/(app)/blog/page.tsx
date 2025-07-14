@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -21,14 +22,6 @@ const blogPosts = [
     aiHint: "digital spirituality",
     slug: "/blog/digital-devotion",
   },
-  {
-    title: "AI for a Balanced Life: The AI Timetable Planner",
-    date: "October 1, 2024",
-    description: "Discover how our AI Timetable Planner is designed to help you organize your life with purpose and clarity.",
-    image: "https://placehold.co/600x400.png",
-    aiHint: "organized planning",
-    slug: "/blog/balanced-life-ai",
-  },
 ];
 
 export default function BlogPage() {
@@ -41,7 +34,7 @@ export default function BlogPage() {
               Insights, ideas, and updates from the team at Orbiveda.
             </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
           {blogPosts.map((post) => (
             <Card key={post.title} className="bg-card border text-left transition-all duration-300 hover:border-primary hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
               <CardHeader className="p-0">
