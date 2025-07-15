@@ -8,6 +8,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Poppins } from 'next/font/google';
 import { cn } from '@/lib/utils';
+import ScrollToTop from "@/components/ui/scroll-to-top"
 
 
 const poppins = Poppins({
@@ -32,8 +33,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={cn("font-sans antialiased", poppins.variable)}>
+      <body className={cn("font-sans antialiased flex flex-col min-h-screen bg-background", poppins.variable)}>
         {children}
+        <ScrollToTop />
         <Toaster />
       </body>
     </html>
