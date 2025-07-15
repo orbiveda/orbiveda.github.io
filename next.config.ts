@@ -11,7 +11,8 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/lib/image-loader.ts',
   },
 };
 
