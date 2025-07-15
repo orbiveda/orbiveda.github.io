@@ -10,7 +10,6 @@ import { Poppins } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import ScrollToTop from "@/components/ui/scroll-to-top"
 
-
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-sans',
