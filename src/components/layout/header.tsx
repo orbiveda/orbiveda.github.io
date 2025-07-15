@@ -35,7 +35,7 @@ export default function Header() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary transition-transform hover:scale-105">
-              <Image src="/orbiveda-logo.png" alt="Orbiveda Logo" width={176} height={40} />
+              <Image src="/img/orbiveda-logo.png" alt="Orbiveda Logo" width={176} height={40} />
           </Link>
 
           {/* Desktop Navigation */}

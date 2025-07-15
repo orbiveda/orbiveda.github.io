@@ -21,7 +21,7 @@ const products = [
       "Community spaces for deeper engagement.",
       "Mindful design to reduce digital fatigue."
     ],
-    image: "/truebond-app.png",
+    image: "/img/truebond-app.png",
     width: 600,
     height: 400
   },
@@ -35,7 +35,7 @@ const products = [
       "Access to sacred texts, kirtans, and lectures.",
       "Community features to connect with temples and fellow devotees."
     ],
-    image: "/bhaktipath-app.png",
+    image: "/img/bhaktipath-app.png",
     width: 500,
     height: 500
   },
