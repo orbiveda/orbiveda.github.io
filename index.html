@@ -1,200 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Orbiveda - Where Innovation Meets Soul. Premium technology blending cutting-edge innovation with spiritual wisdom.">
-    <meta name="keywords" content="technology, innovation, spiritual tech, AI, Orbiveda">
-    <meta name="author" content="Orbiveda">
-    <title>Orbiveda | Innovation Meets Soul</title>
-    <link rel="icon" href="assets/orbiveda-favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="styles/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orbiveda – Innovation Meets Soul</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google AdSense (optional) -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    :root{
+      --bg:#0D1117;
+      --bg2:#161B22;
+      --gold:#FFD700;
+      --blue:#00BFFF;
+      --glass:rgba(255,255,255,.06);
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    html{scroll-behavior:smooth}
+    body{background:linear-gradient(135deg,var(--bg),var(--bg2));color:#fff;line-height:1.6;overflow-x:hidden}
+    section{padding:100px 10%}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block;border-radius:8px}
+    h1,h2,h3{font-weight:700;color:#fff}
+    .btn{display:inline-block;padding:14px 36px;border-radius:50px;font-weight:600;font-size:16px;cursor:pointer;transition:all .4s}
+    .btn.outline{border:2px solid var(--gold);color:var(--gold)}
+    .btn.outline:hover{background:var(--gold);color:#000}
+    .btn.fill{background:linear-gradient(135deg,var(--blue),#0077ff);color:#fff;border:none}
+    .btn.fill:hover{filter:brightness(1.2)}
+    .glass{background:var(--glass);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08)}
+    /* NAV */
+    nav{position:fixed;top:0;left:0;width:100%;padding:20px 10%;display:flex;align-items:center;justify-content:space-between;z-index:1000;background:rgba(13,17,23,.6);backdrop-filter:blur(20px)}
+    nav .logo{font-size:24px;font-weight:700;color:var(--gold)}
+    nav ul{display:flex;gap:40px;list-style:none}
+    nav ul li a{position:relative}
+    nav ul li a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--gold);transition:.3s}
+    nav ul li a:hover::after{width:100%}
+    .hamburger{display:none;flex-direction:column;cursor:pointer}
+    .hamburger span{width:28px;height:3px;background:#fff;margin:4px 0;transition:.3s}
+    @media(max-width:768px){
+      nav ul{position:absolute;top:80px;right:0;background:var(--bg2);flex-direction:column;width:200px;padding:20px;transform:translateX(100%);transition:.4s}
+      nav ul.open{transform:translateX(0)}
+      .hamburger{display:flex}
+    }
+    /* HERO */
+    #hero{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative}
+    #hero h1{font-size:48px;margin-bottom:12px}
+    #hero p{font-size:24px;margin-bottom:40px;color:#aaa}
+    #hero .logo-glow{width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,var(--gold),transparent 70%);margin-bottom:30px;animation:pulse 2s infinite}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,215,0,.5)}70%{box-shadow:0 0 0 40px rgba(255,215,0,0)}100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}}
+    #particles{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}
+    /* SECTIONS */
+    #about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    @media(max-width:768px){#about{grid-template-columns:1fr}}
+    #products .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+    .card{padding:30px;border-radius:16px;transition:.4s}
+    .card:hover{transform:translateY(-8px);box-shadow:0 0 20px var(--gold)}
+    .card h3{margin-bottom:10px}
+    #blog .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+    #blog .card{cursor:pointer}
+    #contact form{display:flex;flex-direction:column;gap:20px;max-width:600px;margin:auto}
+    #contact input,#contact textarea{padding:16px;border-radius:8px;border:none;background:var(--glass);color:#fff}
+    #contact button{max-width:200px;margin:auto}
+    /* TESTIMONIALS */
+    #testimonials{overflow:hidden}
+    .testi-track{display:flex;gap:40px;animation:slide 20s linear infinite}
+    @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+    .testi-card{min-width:320px;padding:30px;border-radius:16px;flex-shrink:0}
+    /* FOOTER */
+    footer{background:linear-gradient(to top,#0d1117,#161b22);padding:60px 10% 30px;text-align:center}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-bottom:30px;text-align:left}
+    .footer-grid a{color:#aaa}
+    .footer-grid a:hover{color:var(--gold)}
+    .top-btn{position:fixed;bottom:30px;right:30px;background:var(--gold);color:#000;border-radius:50%;width:50px;height:50px;display:grid;place-items:center;font-size:22px;opacity:0;transition:.3s}
+    .top-btn.show{opacity:1}
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">
-    <img src="assets/file_0000000072b46230b6193ad473b16141.png" alt="Orbiveda" class="main-logo">
-            </a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#products">Products</a>
-                <a href="#testimonials">Clients</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="orb-animation"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="fade-in">Innovation Meets <span class="highlight">Soul</span></h1>
-                <p class="fade-in">Where cutting-edge technology blends with timeless wisdom to create transformative solutions.</p>
-                <div class="cta-buttons fade-in">
-                    <a href="#about" class="btn btn-primary">Discover More</a>
-                    <a href="#products" class="btn btn-secondary">Our Products</a>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </section>
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">Orbiveda</a>
+  <ul id="menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About <span class="highlight">Orbiveda</span></h2>
-                <p>Our vision for a harmonious technological future</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Mission</h3>
-                    <p>To create technology that not only advances human capability but also nurtures the human spirit, bridging the gap between innovation and consciousness.</p>
-                    <h3>Vision</h3>
-                    <p>We envision a world where technology serves as a catalyst for spiritual growth, where every advancement brings us closer to our true potential as conscious beings.</p>
-                </div>
-                <div class="about-image">
-                    <div class="glowing-card">
-                        <div class="inner-glow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="hero">
+  <canvas id="particles"></canvas>
+  <div class="logo-glow"></div>
+  <h1>Orbiveda</h1>
+  <p>Innovation Meets Soul</p>
+  <div>
+    <a class="btn outline" href="#about">Discover More</a>
+    <a class="btn fill" href="#products">Our Products</a>
+  </div>
+</section>
 
-    <!-- Products Section -->
-    <section id="products" class="section products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our <span class="highlight">Products</span></h2>
-                <p>Innovative solutions for the modern soul</p>
-            </div>
-            <div class="product-cards">
-                <div class="product-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Orb AI</h3>
-                    <p>An artificial intelligence system designed with ethical frameworks and intuitive understanding.</p>
-                    <a href="#" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="product-card">
-                    <div class="card-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Spiritual OS</h3>
-                    <p>A revolutionary operating system that adapts to your consciousness patterns.</p>
-                    <a href="#" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="product-card">
-                    <div class="card-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Vision Devices</h3>
-                    <p>Wearable technology that enhances perception and connects you to higher states.</p>
-                    <a href="#" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section id="about">
+  <div>
+    <h2>Mission & Vision</h2>
+    <p><strong>Mission:</strong> At Orbiveda, we are building apps that blend innovation and humanity. From soulful tools for spiritual growth to AI-powered platforms for creators, we aim to inspire.</p>
+    <p><strong>Vision:</strong> To connect people worldwide through meaningful technology that respects both heart and mind.</p>
+  </div>
+  <div>
+    <img src="https://via.placeholder.com/600x400/161b22/ffd700?text=Orbiveda+Graphic" alt="Orbiveda">
+  </div>
+</section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Trusted By <span class="highlight">Visionaries</span></h2>
-                <p>Leading organizations that believe in our mission</p>
-            </div>
-            <div class="client-logos">
-                <div class="logo-item">FutureTech</div>
-                <div class="logo-item">Conscious Inc</div>
-                <div class="logo-item">Nova Systems</div>
-                <div class="logo-item">Zenith Labs</div>
-                <div class="logo-item">Aether Group</div>
-            </div>
-        </div>
-    </section>
+<!-- PRODUCTS -->
+<section id="products">
+  <h2 style="text-align:center;margin-bottom:60px">Products</h2>
+  <div class="grid">
+    <div class="card glass">
+      <h3>🌸 NityaBhakti</h3>
+      <p><em>Daily Devotion Redefined</em></p>
+      <p>Your personalized spiritual companion for prayers & rituals. Coming Soon.</p>
+      <img src="https://via.placeholder.com/400x240/161b22/ffd700?text=NityaBhakti" alt="NityaBhakti">
+    </div>
+    <div class="card glass">
+      <h3>🔗 TrueBond</h3>
+      <p><em>Connections That Last</em></p>
+      <p>Strengthening relationships with technology and trust. Coming Soon.</p>
+      <img src="https://via.placeholder.com/400x240/161b22/00bfff?text=TrueBond" alt="TrueBond">
+    </div>
+    <div class="card glass">
+      <h3>🧠 Orb AI</h3>
+      <p><em>Smarter Decisions, Creative Freedom</em></p>
+      <p>An AI platform for creators and developers. Coming Soon.</p>
+      <img src="https://via.placeholder.com/400x240/161b22/00bfff?text=OrbAI" alt="Orb AI">
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Get In <span class="highlight">Touch</span></h2>
-                <p>Connect with us for collaborations and inquiries</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><i class="fas fa-envelope"></i> orbiveda@gmail.com</p>
-                    <p><i class="fab fa-instagram"></i> @orbiveda</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+<!-- BLOG -->
+<section id="blog">
+  <h2 style="text-align:center;margin-bottom:60px">Latest Insights</h2>
+  <div class="grid">
+    <div class="card glass">
+      <img src="https://via.placeholder.com/400x240/161b22/ffd700?text=Tech+Spirituality" alt="">
+      <h3>5 Ways Technology Can Inspire Daily Spirituality</h3>
+      <p>Discover how mindful tech can deepen your spiritual routine.</p>
+      <a href="#">Read More &rarr;</a>
+    </div>
+    <div class="card glass">
+      <img src="https://via.placeholder.com/400x240/161b22/00bfff?text=AI+Future" alt="">
+      <h3>The Future of Human-AI Collaboration</h3>
+      <p>Exploring the balance between human intuition and machine intelligence.</p>
+      <a href="#">Read More &rarr;</a>
+    </div>
+    <div class="card glass">
+      <img src="https://via.placeholder.com/400x240/161b22/ffd700?text=Journey" alt="">
+      <h3>Our Journey: How Orbiveda Began</h3>
+      <p>The story behind our mission to humanize technology.</p>
+      <a href="#">Read More &rarr;</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-    <img src="assets/file_000000005e3061f980a5f3d2ce8c8e10.png" alt="Orbiveda" class="footer-logo-img">
-    <span>Orbiveda</span>
-</div>
-                <div class="footer-links">
-                    <a href="#about">About</a>
-                    <a href="#products">Products</a>
-                    <a href="#testimonials">Clients</a>
-                    <a href="#contact">Contact</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Orbiveda. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <h2 style="text-align:center;margin-bottom:50px">Testimonials</h2>
+  <div class="testi-track">
+    <div class="testi-card glass">
+      <p>“Orbiveda is shaping apps that feel human-centered. A rare balance of tech and purpose.”</p>
+      <p><strong>— Alex M., UX Designer</strong></p>
+    </div>
+    <div class="testi-card glass">
+      <p>“We’ve partnered with Orbiveda on two projects and loved the innovation they bring.”</p>
+      <p><strong>— Priya S., Product Manager</strong></p>
+    </div>
+    <div class="testi-card glass">
+      <p>“Orbiveda is shaping apps that feel human-centered. A rare balance of tech and purpose.”</p>
+      <p><strong>— Alex M., UX Designer</strong></p>
+    </div>
+    <div class="testi-card glass">
+      <p>“We’ve partnered with Orbiveda on two projects and loved the innovation they bring.”</p>
+      <p><strong>— Priya S., Product Manager</strong></p>
+    </div>
+  </div>
+</section>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+<!-- CONTACT -->
+<section id="contact">
+  <h2 style="text-align:center;margin-bottom:40px">Contact Us</h2>
+  <form onsubmit="return false">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="5" placeholder="Message" required></textarea>
+    <button class="btn fill">Send Message</button>
+  </form>
+  <div style="text-align:center;margin-top:40px">
+    <a href="https://instagram.com/orbiveda" target="_blank" style="margin:0 10px">📷 Instagram</a>
+    <a href="https://x.com/orbiveda" target="_blank" style="margin:0 10px">🐦 X</a>
+    <a href="mailto:hello@orbiveda.com" style="margin:0 10px">📧 Email</a>
+  </div>
+  <img src="https://via.placeholder.com/600x300/161b22/ffd700?text=Contact+Illustration" style="margin:40px auto 0">
+</section>
 
-    <script src="scripts/script.js"></script>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>Orbiveda</h3>
+      <p>Orbiveda creates apps and solutions that inspire, connect, and innovate.</p>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <p><a href="#hero">Home</a></p>
+      <p><a href="#products">Products</a></p>
+      <p><a href="#blog">Blog</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </div>
+    <div>
+      <h3>Follow Us</h3>
+      <p><a href="https://instagram.com/orbiveda">Instagram</a></p>
+      <p><a href="https://x.com/orbiveda">X (Twitter)</a></p>
+      <p><a href="mailto:hello@orbiveda.com">Email</a></p>
+    </div>
+  </div>
+  <p style="margin-top:40px;font-size:14px;color:#aaa">© 2025 Orbiveda. All rights reserved.</p>
+</footer>
+
+<a class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</a>
+
+<!-- SCRIPTS -->
+<script>
+/* Mobile Menu */
+function toggleMenu(){
+  document.getElementById('menu').classList.toggle('open');
+}
+
+/* Scroll reveal */
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity = 1;
+      e.target.style.transform = 'translateY(0)';
+    }
+  })
+},{threshold:0.2})
+document.querySelectorAll('section').forEach(el=>{
+  el.style.opacity=0; el.style.transform='translateY(40px)'; el.style.transition='1s';
+  observer.observe(el);
+})
+
+/* Scroll-to-top button */
+window.onscroll = () => {
+  document.getElementById('topBtn').classList.toggle('show', window.scrollY > 400);
+}
+
+/* Particle Background */
+(function(){
+  const c = document.getElementById('particles');
+  const ctx = c.getContext('2d');
+  let W = c.width = window.innerWidth;
+  let H = c.height = window.innerHeight;
+  const particles = [];
+  const count = 100;
+  for(let i=0;i<count;i++){
+    particles.push({
+      x:Math.random()*W,
+      y:Math.random()*H,
+      r:Math.random()*2+1,
+      d:Math.random()*count
+    });
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    ctx.fillStyle='rgba(255,215,0,.3)';
+    particles.forEach(p=>{
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2); ctx.fill();
+    })
+    update();
+  }
+  function update(){
+    particles.forEach(p=>{
+      p.y += Math.cos(p.d)+1 + p.r/2;
+      p.x += Math.sin(p.d)*.5;
+      if(p.x>W+5 || p.x<-5 || p.y>H) {
+        p.x = Math.random()*W;
+        p.y = -10;
+      }
+    })
+  }
+  function loop(){
+    draw();
+    requestAnimationFrame(loop);
+  }
+  loop();
+  window.addEventListener('resize',()=>{
+    W=c.width=window.innerWidth; H=c.height=window.innerHeight;
+  })
+})();
+</script>
 </body>
-                  </html>
+    </html>
